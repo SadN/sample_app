@@ -34,8 +34,10 @@ describe "Static pages" do
       visit '/static_pages/about'
       expect(page).to have_content('About Us')
     end
-  end
+  
     it "should have the title 'About Us'" do
       visit '/static_pages/about'
       expect(page).to have_title("News Ellada | About Us")
+    end
+  end
 end
