@@ -1,18 +1,18 @@
 require 'spec_helper'
 
-require 'spec_helper'
-
 describe "Static pages" do
+
+let(:const_title) {"Ellinika Nea | "}
 
   describe "Home page" do
 
-    it "has the page the title 'Greek News App'?" do
+    it "has the page the title 'Greek News App'" do
       visit '/static_pages/home'
       expect(page).to have_content('Greek News App')
     end
     it "should have the title 'Home'" do
       visit '/static_pages/home'
-      expect(page).to have_title("Ellinika Nea | Home")
+      expect(page).to have_title(const_title + "Home")
     end
   end
 
@@ -24,7 +24,7 @@ describe "Static pages" do
     end
     it "should have the title 'Help'" do
       visit '/static_pages/help'
-      expect(page).to have_title("Ellinika Nea | Help")
+      expect(page).to have_title(const_title + "Help")
     end
   end
 
@@ -37,7 +37,7 @@ describe "Static pages" do
   
     it "should have the title 'About Us'" do
       visit '/static_pages/about'
-      expect(page).to have_title("Ellinika Nea | About Us")
+      expect(page).to have_title(const_title + "About Us")
     end
   end
 
@@ -49,7 +49,7 @@ describe "Static pages" do
     
     it "should have the title 'Epikoinwnia'" do
       visit '/static_pages/contact' 
-      expect(page).to have_title('Ellinika Nea | Epikoinwnia')
+      expect(page).to have_title(const_title + "Epikoinwnia")
     end
   end
 end
