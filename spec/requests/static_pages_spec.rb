@@ -40,4 +40,16 @@ describe "Static pages" do
       expect(page).to have_title("Ellinika Nea | About Us")
     end
   end
+
+  describe "Contact Page" do
+    it "should have the content 'Epikoinwnia'" do
+      visit '/static_pages/contact'
+      expect(page).to have_content('Epikoinwnia')
+    end
+    
+    it "should have the title 'Epikoinwnia'" do
+      visit '/static_pages/contact' 
+      expect(page).to have_title('Ellinika Nea | Epikoinwnia')
+    end
+  end
 end
