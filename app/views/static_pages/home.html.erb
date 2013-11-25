@@ -1,3 +1,11 @@
 <% provide(:title, 'Home') %>
-<h1>Greek News App</h1>
-<p>This is the fucking new homepage dude</p>
+<div class="center hero-unit">
+  <h1>Welcome to the Greek News App</h1>
+  <h2>This is the homepage for the
+    <a href="http://ec2-54-200-38-241.us-west-2.compute.amazonaws.com:8080/static_pages/home">
+      Greek News App
+    </a>
+  </h2>
+  <%= link_to "Gine melos twra", '#', class:"btn btn-large btn-primary"  %>
+</div>
+<%= link_to image_tag("logo1.jpg", alt: "Rails"), 'http://rubyonrails.org/' %>
