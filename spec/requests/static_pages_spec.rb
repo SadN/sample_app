@@ -12,7 +12,7 @@ describe "Static pages" do
     end
     it "should have the title 'Home'" do
       visit '/static_pages/home'
-      expect(page).to have_title("News Ellada | Home")
+      expect(page).to have_title("Ellinika Nea | Home")
     end
   end
 
@@ -24,7 +24,7 @@ describe "Static pages" do
     end
     it "should have the title 'Help'" do
       visit '/static_pages/help'
-      expect(page).to have_title("News Ellada | Help")
+      expect(page).to have_title("Ellinika Nea | Help")
     end
   end
 
@@ -37,7 +37,7 @@ describe "Static pages" do
   
     it "should have the title 'About Us'" do
       visit '/static_pages/about'
-      expect(page).to have_title("News Ellada | About Us")
+      expect(page).to have_title("Ellinika Nea | About Us")
     end
   end
 end
